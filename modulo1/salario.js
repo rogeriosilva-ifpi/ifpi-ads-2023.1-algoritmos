@@ -3,11 +3,11 @@
  * com um aumento de 25%.
  */
 
-import * as readsync from 'readline-sync'
+import { question } from 'readline-sync'
 
 // Entrada
-const salario = Number(readsync.question('Salário R$: '))
-const percentual = Number(readsync.question('Aumento %: '))
+const salario = Number(question('Salário R$: '))
+const percentual = Number(question('Aumento %: '))
 
 // Processamento
 const aumento = (salario/100) * percentual

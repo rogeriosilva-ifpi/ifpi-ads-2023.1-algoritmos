@@ -1,9 +1,9 @@
-import * as readsync from 'readline-sync'
+import { question } from 'readline-sync'
 
 // Entrada:
-const nome = readsync.question('Nome')
-const peso = Number(readsync.question('Peso: '))
-const altura = Number(readsync.question('Altura: '))
+const nome = question('Nome')
+const peso = Number(question('Peso: '))
+const altura = Number(question('Altura: '))
 
 // Processamento:
 const imc = peso / (altura*altura)

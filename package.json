@@ -1,0 +1,12 @@
+{
+  "name": "ifpi-ads-2023.1-algoritmos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@rogeriosilva-ifpi.github.com:rogeriosilva-ifpi/ifpi-ads-2023.1-algoritmos.git",
+  "author": "Rogerio Silva <rogerio.silva@ifpi.edu.br>",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
