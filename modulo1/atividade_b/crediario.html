@@ -1,0 +1,15 @@
+<script>
+  // Variação pedir tbm qtd de parcelar
+  // Entrada
+  const valor_total = Number(prompt("Valor do Bem: "));
+
+  // Processamento 620 (ent: 206+2, 1. 206 2.206)
+  const parcela = Math.floor(valor_total / 3);
+  const restante = valor_total % 3;
+  const entrada = parcela + restante;
+
+  // Saída
+  alert(
+    "Entrada: R$" + entrada.toFixed(2) + "\n+ 2x de R$: " + parcela.toFixed(2)
+  );
+</script>
