@@ -1,0 +1,78 @@
+<script>
+//entrada
+function main(){ 
+const nome = prompt("Insira seu nome: ")
+const sexo = prompt("Insira seu sexo, Digite 'M' para mulher e 'H' para homem: ")
+const idade = Number(prompt("Insira sua idade: "))
+const peso = Number(prompt("Insira seu peso em kg: "))
+const altura = Number (prompt("Insira sua altura em metros: "))
+const PerfilAtividadeFisica = ("Insira seu perfil de atividade fisica, para Sedentario, digite 'S', para pouco ativo, digite 'P' , para ativo, digite 'A' e para muito ativo, digite 'M' ")
+
+
+alert("Sua necessidade calórica é de: "+ neccessidadecalorica)
+
+const neccessidadecalorica = calcular_necessidade_calorica(sexo,idade,PerfilAtividadeFisica,peso,altura)
+const ganharouperder = prompt("Você deseja ganhar ou perder peso ?, digite 'G' para ganhar e 'P' para perder")
+const semanas = Number(prompt("Em quantas semanas você deseja atingir o seu objetivo: "))
+const meta = Number(prompt("Quantos kg você deseja ganhar ou perder? "))
+
+const perder_ou_ganhar_peso = calcular_perda_de_peso(neccessidadecalorica,ganharouperder) 
+
+function calcular_necessidade_calorica(sexo,idade,PerfilAtividadeFisica,peso,altura){
+if (sexo=== 'H' & PerfilAtividadeFisica ==='S'){
+const neccessidadecalorica = 662-(9.43*idade)+ 1*(15.91*peso)+(539.6*altura)  
+}else if('H' & PerfilAtividadeFisica ==='P'){
+const neccessidadecalorica = 662-(9.43*idade)+ 1.11*(15.91*peso)+(539.6*altura)
+}else if('H' & PerfilAtividadeFisica ==='A'){
+const neccessidadecalorica = 662-(9.43*idade)+ 1.25*(15.91*peso)+(539.6*altura)
+}else if ('H' & PerfilAtividadeFisica ==='M'){
+const neccessidadecalorica = 662-(9.43*idade)+ 1.48*(15.91*peso)+(539.6*altura)
+}else if ('M' & PerfilAtividadeFisica ==='S'){
+const neccessidadecalorica = 354-(6.91*idade)+ 1*(9.36*peso)+(726*altura)
+}else if ('M' & PerfilAtividadeFisica ==='P'){
+const neccessidadecalorica = 354-(6.91*idade)+ 1.12*(9.36*peso)+(726*altura)
+}else if ('M' & PerfilAtividadeFisica ==='A'){
+const neccessidadecalorica = 354-(6.91*idade)+ 1.27*(9.36*peso)+(726*altura)
+}else if ('M' & PerfilAtividadeFisica ==='M'){
+const neccessidadecalorica = 354-(6.91*idade)+ 1.45*(9.36*peso)+(726*altura)
+}
+}
+
+function perder_ou_ganhar_peso(neccessidadecalorica,ganharouperder,meta,semanas){
+if(ganharouperder===P){
+const kgporsemana = meta/semanas
+const caloriasporsemana = kgporsemana*7700
+const proteinasdiaemg = (0.4 * (kgporsemana/7))/1000
+const carboidratosdiaemg = (0.4 *(kgporsemana/7))/1000
+const gordurasdiaemg = (0.2 *(kgporsemana/7))/1000
+return
+alert("Boa sorte nessa nova jornada de muita dor e sofrimento rs!") 
+alert ("A quantidade de kg que você deve perder por semana é de: "+kgporsemana+"Isso corresponde a" +caloriasporsemana + "calorias por semana" )
+       alert ("Com isso, a sua dieta diaria ficara com," + proteinasdiaemg + "g de proteína por dia" + carboidratosdiaemg + "g de carboidrato por dia" + gordurasdiaemg +"g de gordura por dia" + "Voce devera consumir exatamente isso nas proximas" + semanas +"semanas"  )        
+}if((meta/semanas) >1)
+return alert ("Vale ressaltar que essa meta é muito exagerada e pode comprometer sua saúde!")
+}
+
+if(ganharouperder===G){
+const kgporsemana = meta/semanas
+const caloriasporsemana = kgporsemana*7700
+const proteinasdiaemg = (0.4 * (kgporsemana/7))/1000
+const carboidratosdiaemg = (0.4 *(kgporsemana/7))/1000
+const gordurasdiaemg = (0.2 *(kgporsemana/7))/1000
+return
+alert("Boa sorte nessa nova jornada de muita dor e sofrimento rs!") 
+alert ("A quantidade de kg que você deve ganhar por semana é de: "+kgporsemana+"Isso corresponde a" +caloriasporsemana + "calorias por semana" )
+alert ("Com isso, a sua dieta diaria ficara com," + proteinasdiaemg + "g de proteína por dia" + carboidratosdiaemg + "g de carboidrato por dia" + gordurasdiaemg +"g de gordura por dia" + "Voce devera consumir exatamente isso nas proximas" + semanas +"semanas"  )        
+}if((meta/semanas) >1){
+return alert ("Vale ressaltar que essa meta é muito exagerada e pode comprometer sua saúde!")
+}
+
+
+}
+
+
+
+
+
+main()
+</script>

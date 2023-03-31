@@ -1,0 +1,8 @@
+
+        print('Sua situacao de habilitacao do FIES se enconta como {}'.format(habilitacao))
+        print('O valor a ser financiado pelo FIES e: R${}'.format(valor_a_ser_financiado))
+        print('O juros total deste financiamento sera de: R${}'.format(juros))
+        print('O valor total (somando o valor a ser financiado mais o juros) e de R${}'.format(valor_total))
+        print('A carencia paga durante o curso e igual a R${} e carencia total que sera paga sera de R${}.'.format(carencia_durante_curso,carencia_total))
+        print('Caso opte em parcelar no maximo de parcelas permitidas, cada parcela custara R${}'.format(valor_parcelas_maximas))
+        print('Para pagar o valor dessas parcelas, voce precisa de uma renda de no minimo R${}'.format(renda_minima))

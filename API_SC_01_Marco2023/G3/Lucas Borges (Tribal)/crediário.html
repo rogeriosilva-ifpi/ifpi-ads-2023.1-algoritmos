@@ -1,0 +1,30 @@
+<script>
+//entrada
+function main(){
+const valoriphone = Number(prompt("Informe o valor do iphone($): "))
+const formadepagamento = prompt ("Informe a forma de pagamento, para pix,digite 'p', para cartão de debito, digite 'd' , para cartão de credito, digite 'c'")
+const valorentrada = Number(prompt("Caso deseje pagar via cartao de credito, insira o valor da entrada: ($)"))
+const quantidadedeparcelas = Number(prompt("Caso deseje pagar via cartao de credito, insira a quantidade de parcelas: "))
+
+
+const pagamento = calcular_pagamento(valoriphone,formadepagamento)
+
+//funçao do pagamento
+function  calcular_pagamento (valoriphone,formadepagamento)
+if (formadepagamento=== 'p') {
+const valorfinal = valoriphone*0.85
+const desconto = valoriphone*0.15
+return alert ("Como escolheu o pagamento via Pix/especie, o valor é de: R$" +valorfinal + "\n" + "Com um desconto de: R$ " + desconto )
+} else if (formadepagamento==='d'){
+const valorfinal = valoriphone*0.9
+const desconto = valoriphone*0.1
+return alert ("Como escolheu o pagamento via cartão de débito, o valor é de: R$" +valorfinal + "\n" + "Com um desconto de: R$ " + desconto )
+}else {
+const valorjuros = ((valoriphone-valorentrada)*((3.99 + (1.5*quantidadedeparcelas)))/100)
+const valorparcela = (valoriphone+valorjuros)/quantidadedeparcelas
+return alert ("Como voce escolheu cartao de credito como forma de pagamento, foi aplicada uma taxa de juros, com isso seu pagamento fica como:  "+ "\n" + "Entrade de: "+valorentrada + "\n" + quantidadedeparcelas +" parcelas de: "+valorparcela)
+}
+}
+
+main()
+</script>

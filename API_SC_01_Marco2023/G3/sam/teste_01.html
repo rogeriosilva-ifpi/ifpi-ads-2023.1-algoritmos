@@ -1,0 +1,22 @@
+const postPost = async () => {
+    const text = 'Fetch post'
+    const title = 'Fecth'
+
+    const post = {
+        text: text,
+        title: title,
+    }
+
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(post)
+    }
+
+    const response = await fetch('https://engsoftbackend2023-1.onrender.com/posts/add', options)
+    console.log(response.json())
+}
+
+postPost()

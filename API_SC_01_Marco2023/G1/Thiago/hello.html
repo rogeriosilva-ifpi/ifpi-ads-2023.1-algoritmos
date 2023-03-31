@@ -1,0 +1,68 @@
+<script>
+ function main() {
+        //Entrada 
+        const duracao_do_curso = Number(prompt('Qual a duração do curso (em meses multiplos de 6)? '))
+        const mensalidade = Number(prompt('Mensalidade do curso?'))
+        const taxa_SELIC = Number(prompt('Taxa SELIC? '))
+        const salaio_minimo = Number(prompt('Você recebe quantos salarios mínimos?'))
+        const familia = Number(prompt('Número de pessoas que moram na sua casa? '))
+        const periodo = Number(prompt('Ano e Semestre de início? '))
+
+        //Processamento 
+        const valor_anual = duracao_do_curso * mensalidade
+        const parcel_trimestral = (duracao_do_curso / 4) * 150
+        const aprovado = contratar(salaio_minimo)
+        const salario_liquido = salaio_minimo * 1302
+        const carencia = 18 * 150 
+        const pagamento_anual = mensalidade * 12
+        const financiamento = pagamento_anual * (duracao_do_curso / 12)
+        const per_capita = renda_familiar(salario_liquido, familia)
+        const juros = calcular_juros(salaio_minimo, salario_liquido)
+        const juros_anual = juros * (duracao_do_curso / 12)
+        const valor_total = valor_anual + juros_anual + carencia
+        const parcela_pos_carencia = valor_anual + juros - carencia
+        const parcela2x = parcela_pos_carencia / 2
+        const parcela3x = (parcela_pos_carencia / 3)
+        const parcela4x = parcela_pos_carencia / 4
+        const renda_pos_curso = parcela4x * 10
+        const ano_pagamento = periodo + (duracao_do_curso / 12)
+        const ano_pagamento1 = periodo + (duracao_do_curso / 12) * 2  
+        const ano_pagamento2 = periodo + (duracao_do_curso / 12) * 3
+        const ano_pagamento3 = periodo + (duracao_do_curso / 12) * 4
+
+        //Saída
+        alert(`Contrato: ${aprovado}`)
+        alert(`Financiamento: ${financiamento}`)
+        alert(`Juros anual: ${juros_anual}`)
+        alert(`Valor total: ${valor_total}`)
+        alert(`As parcelas trimestrais durante todo o curso são de ${parcel_trimestral.toFixed(2)} R$ e a Carência é de ${carencia.toFixed(2)} R$`)
+        alert(`A parcela pós carência poder 2x de ${parcela2x.toFixed(2)}, 3x de ${parcela3x.toFixed(2)} e 4x de ${parcela4x.toFixed(2)}`)
+        alert(`A renda mínima pó curso é de ${renda_pos_curso.toFixed(2)} R$`)
+        alert(`Se ele pagar o financaimento a vista, terminará em ${ano_pagamento}, se parcelar em 2x será em ${ano_pagamento1}, em 3x será em ${ano_pagamento2} e em 4x será em ${ano_pagamento3}`)
+    }
+    main()
+    function contratar(salario){ 
+            if (salario <= 3) {
+                return `Aprovado`
+            } else{
+                return `Reprovado`
+            }
+        }
+
+        function renda_familiar (salario, pessoas) {
+            const renda = Math.floor(salario / pessoas)
+        }
+        
+        function calcular_juros(minimo, liquido) {
+            if (minimo > 0 && minimo <= 1.5) {
+                return liquido * 0.10
+            } else if (minimo > 1.5 && minimo <= 2) {
+                return liquido * 0.15
+            } else if (minimo > 2 && minimo <= 2.5) {
+                return liquido * 0.20
+            } else {
+                return liquido * 0.25
+            }
+
+        }
+</script>
