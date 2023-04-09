@@ -1,0 +1,3 @@
+1. Faltou organizar o código. Partes fragmentadas.
+2. Nomes abreviados.
+3. Questão nao resolvidas. Fez partes mas nao conectou.

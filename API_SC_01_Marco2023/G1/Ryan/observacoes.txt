@@ -1,0 +1,7 @@
+FIES:
+1. nomes do arquivo deveo ser fies.py
+2. main ficou com muita responsabilidade
+3. Falhas de leitura e interpretacao.. verificacoes como < 3 ou < 1.5 em hablitado e taxa de juros
+
+CONSORCIO:
+1. COnfuso. Ler com calma. Estrutura o código

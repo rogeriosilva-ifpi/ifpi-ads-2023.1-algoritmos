@@ -1,0 +1,2 @@
+1. O AF vc deveria computar de acordo com sexo e nível de atividade (hehee)
+2. Evitar retornos com texto já prontos para serem exibidos. Funcoes devem retornar dados e nao textos para exibicao

@@ -1,0 +1,9 @@
+1. Somente main conversa com usuário!
+2. Nao deve ter console.log em funcoes que tem papel prvisto de computador dados.
+3. Console.log nao tem valor para ser retornado ele é sem valor (undefined)
+4. Seu programa nao tem o flow na main() retorno vazios e etc.
+
+
+1. funcao dentro de funcao: vc definiu funcoes dentro da main
+2. Identar o código
+3. Código tá ruim para leitura, o flow nao tá bom JG.

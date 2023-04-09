@@ -1,0 +1,3 @@
+1. Organizar em funcoes.
+2. Aparente a lógica tá no rumo.
+3. Nomear os arquivos adequadamente

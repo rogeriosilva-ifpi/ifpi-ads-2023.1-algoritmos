@@ -1,0 +1,2 @@
+1. heheh, sobre o AF vc deveria calcular no seu código a partir dos dados
+2. Lembre que só a main deve conversar com o usuário

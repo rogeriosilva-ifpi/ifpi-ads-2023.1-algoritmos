@@ -1,0 +1,8 @@
+FIES:
+1. Só recebeu os dados
+
+CONSORcIO:
+1. Código não indentado
+2. Funcoes especializadas que retornam valores porém os valores 
+não são recebidos e tratados/usados
+3. Bem confuso. Estruturar bem para pode conseguir andar. 

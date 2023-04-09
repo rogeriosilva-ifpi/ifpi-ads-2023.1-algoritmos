@@ -1,0 +1,6 @@
+1. funcoes dentro de funcao
+2. Em calcular_necessidade_calorica() --> vc poderia evitar a repeticao da formulas, visto que apenas o AF que vai mudando.
+2.1 entao o dentro dos IF vc poderia ir atribuindo apenas o valor para AF e ao final aplicar na formuala
+
+3. Em crediário vc fez usos indevidos de IF, sem necessidade dentro das funcoes.
+4. Muitos espaços..

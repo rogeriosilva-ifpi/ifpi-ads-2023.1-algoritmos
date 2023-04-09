@@ -1,0 +1,1 @@
+1. Separar mais as responsabilidades e momento em funcoes e nao sobrecarregar a main()

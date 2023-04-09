@@ -1,0 +1,3 @@
+1. Achei legal o jeito de usar os ternários. A leitura fica boa.
+2. Usar funcoes para separar responsabilidades  e melhorar leitura
+3. Nomear arquivo de acordo com dito na avalicao

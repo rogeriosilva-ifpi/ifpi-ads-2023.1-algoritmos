@@ -1,6 +1,7 @@
 
 # Germano Júnior 2023111TADS0015 2023-março-27
 
+
 def main():
     print("TODO: terminar :(")
     # ENTRADA
@@ -34,6 +35,6 @@ def main():
         print("Não é possível resgatar o bem")
         print(f"Renda mínima para o resgate: {valor_resgate}")
 
+
 if __name__ == "__main__":
     main()
-

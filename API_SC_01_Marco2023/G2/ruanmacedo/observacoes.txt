@@ -1,0 +1,2 @@
+1. Lógica OK.
+2. Organizar o código em funcoes.

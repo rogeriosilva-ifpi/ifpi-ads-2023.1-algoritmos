@@ -1,0 +1,9 @@
+FIES
+1. nomes do arquivo é fies.html
+2. funcoes declaradas após a chama de main
+3. Identacao confusa prejudizou meu entendimento
+4. em Contratar vc verificar se o saláro é menor que 3 reais???
+5. calcular juros tambeu ficou confuso
+6. Usar mais funcoes
+7. Fez muitos cálculo hardcoded manuais invés de computacoes
+8. Precisando treinar mais.

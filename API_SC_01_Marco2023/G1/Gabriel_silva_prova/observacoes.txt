@@ -1,0 +1,9 @@
+FIES:
+1. Organizar o código em funcoes
+2. Evitar código repetido N vezes
+3. Lógica tá ok.
+
+CONSORCIO:
+1. Total a pagar é Bem + Taxa
+2. Incompleta e muito código repetido. 
+3. Nao organizou em funcões.

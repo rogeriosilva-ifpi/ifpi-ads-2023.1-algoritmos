@@ -1,0 +1,6 @@
+FIES
+1. Bem organizada
+
+CONSORCIO:
+1. cuidado com o toFixed pq ele transforma número em texto e isso pode atrapalhar cálculos
+2. Código organizado

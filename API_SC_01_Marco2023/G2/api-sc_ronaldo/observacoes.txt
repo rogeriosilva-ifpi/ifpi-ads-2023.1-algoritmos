@@ -1,0 +1,3 @@
+1. Caprichar mais no nomes das variáveis e funcoes, botar nomes mais claros e significativos
+2. Não criar funcoes dentro de outras funcoes, sua funcoes ficaram dentro da funcao main()
+3. Nao aplicou as regras de calculo de horas

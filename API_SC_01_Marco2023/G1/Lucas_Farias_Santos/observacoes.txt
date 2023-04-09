@@ -1,0 +1,12 @@
+FIES:
+1. Nomes ok
+2. Organizar em funcoes é fundamental para vc dominar as complexidades
+3. No cálculo da taxa de juros é para comparar renda per capita com salário mínimo
+4. Sobre aprovacao do FIES é para compara renda per capita e nao renda familiar
+5. Vc tá iniciando a compreender os assuntos porém precisa treinar mais leitura/interpretacao
+6. use funcoes ao máximo
+
+CONSORCIO:
+1. Bem objetiva.
+2. tá indo bem. Caprichar na organização.
+3. Faltaram uns itens

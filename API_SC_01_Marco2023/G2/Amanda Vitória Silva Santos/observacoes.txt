@@ -1,0 +1,3 @@
+MEU_DINHEIRINHO:
+1. Código bem organizado. Sequenciado.
+2. Alguns problemas em funcoes, mas são detalhes de leitura e interpretacao

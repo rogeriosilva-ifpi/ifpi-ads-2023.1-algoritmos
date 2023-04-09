@@ -1,0 +1,3 @@
+1. Sem indetacao nao tem como saber quais instrucoes pertencem a qual funcao
+2. Somente a main conversa com Usuário (sua funcao calcular tá mostrando o resultado e nao deveria.)
+3. Ao corrigir identacao e uso correto das funcoes (somente main conversa com usuário) ficaria 100%

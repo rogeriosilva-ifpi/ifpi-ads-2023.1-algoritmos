@@ -1,0 +1,4 @@
+1. Usar funcoes adequadamente para sequenciar sua solucão.
+2. Só main conversa com usuario.
+3. Código tá muito confuso. Sequenciar etapas, Nomear adequadamente. 
+4. Segmentar entrada, procesamento e saída em algum nível

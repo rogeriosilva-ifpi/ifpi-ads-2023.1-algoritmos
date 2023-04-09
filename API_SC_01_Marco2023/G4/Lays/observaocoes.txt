@@ -1,0 +1,5 @@
+1. Nao compreendeu bem o problema e solucao
+2. Somente main conversa com usuário
+3. Usar corretamente identacao
+4. Nomes de variável e funcoes com o mesmo valor(mesmo nome)
+5. funcoes sem retorno fazenod console.log

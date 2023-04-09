@@ -1,0 +1,2 @@
+- Funções criadas dentro de funcões (As funcoes ficaram dentro da funcão main)
+- Questões só iniciadas

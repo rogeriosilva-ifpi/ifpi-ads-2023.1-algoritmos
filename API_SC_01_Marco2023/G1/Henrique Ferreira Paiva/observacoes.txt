@@ -1,0 +1,7 @@
+FIES:
+1. Não usar retorno múltiplos em funcoes
+2. Condicionais precisa organizar (obdecer a estrutura)
+3. Funcoes sem retorno 
+4. Aparentemente vc tá compreendendo o conteúdo. Falta mais treino
+5. Multiplicou SELEC pelo mínimo mas questão não informa isso.
+6. Vc se confundiu com a interpretaçao da questão.

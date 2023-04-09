@@ -1,0 +1,7 @@
+FIES:
+1. main () --> main()
+2. renda/salario>3 --> renda/salario > 3
+3. Criterio de aprovaao é renda per capita ou seja por pessoa e nao renda familiar
+
+CONSORCIO:
+1. Nao iniciada de fato.

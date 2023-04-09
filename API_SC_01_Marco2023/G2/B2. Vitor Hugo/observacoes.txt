@@ -1,0 +1,4 @@
+1. Ficou bem organizado.
+2. Pode reduzir algumas indirecoes, deixar a questao mais fácil de ler
+3. Uso adequado de funcoes.
+4. Faltou continuar com demais itens

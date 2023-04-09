@@ -1,0 +1,4 @@
+1. Identar o código adequadamente
+2. Fazer uso de funcoes para as tarefas
+3. Funcoes retornam dados e nao mensagem a serem exibidas
+4. Organizar o fluxo em funcoes.

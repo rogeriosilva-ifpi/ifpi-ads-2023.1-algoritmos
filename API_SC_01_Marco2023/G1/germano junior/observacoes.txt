@@ -1,0 +1,13 @@
+FIES:
+1. Nomes variaveis indevidamente encurtados
+2. Não consegui compreender bem devido ao item 1
+3. Incluir 1 espaço entre blocos de instrucoes.
+4. Incluir 2 espaços (enters) entre funcoes.
+5. Usar nomes signicativos
+6. Usar mais funcoes e evitar cálculos na main mesmo os mais simples
+
+CONSORCIO:
+1. Não organizou em funcoes. Leitura/entendimento prejudicada
+2. Usar mais linhas vazias entre os blocos de código
+3. Organizar o código é item 0 na avaliação: nomes e organizacão tem peso forte.
+4. Seu código tá ok do ponto de vista de lógica

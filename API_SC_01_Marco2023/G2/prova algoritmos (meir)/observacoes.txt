@@ -1,0 +1,2 @@
+1. Nomes significatos. Nomes claro. Objetivos porém claros.
+2. Ter um funcao main()

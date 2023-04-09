@@ -1,0 +1,8 @@
+FIES:
+1. Precisa treinar mais leitura e interpretacao de problemas (renda per capita >  3 salarios mínimos)
+2. Incluir uma , após cada argumento ao chamar um funcao
+3. Modularizou bem o código.
+4. Renda per capita é simplesmente dividir renda familiar por qtd de pessoas
+
+CONSORCIO:
+1. Evitar funcoes que retornam um texto pronto. Retonar dados e deixar a main decide qual texto mostrar. verificar_renda()

@@ -1,0 +1,7 @@
+FIES:
+1. Estrutura confusa
+2. Nao organizou em funcoes.
+3. Estruturas Condicionais com expressao booleana no local errado: após a expressao booleana é que se abre o bloco {}
+
+CONSORCIO:
+1. Só iniciada

@@ -1,0 +1,5 @@
+CONSORCIO
+1. Nomes errado do arquivo (fies.js)
+2. Identiar o código cada bloco com suas instrucoes.
+3. Botar dois espacos entre as funcoes 
+4. Funcoes com muito retorno em string (funcoes sao especilizadas em fazer um tarefa, como isso vai ser mostrado é papel da main)

@@ -1,0 +1,3 @@
+1. botar duas linhas vazias entre as funcoes.
+2. No calculo da necessidade vc poderia nao repetir a formula em cada IF, simplemente calculando o valor do AF e entao no final aplicar na funcao.
+3. Ficou top!

@@ -1,0 +1,2 @@
+1. Faltou estruturar o código em funcoes.
+2. Completar os pedidos da questao.

@@ -1,0 +1,10 @@
+FIES:
+1. Fazer uso de funcoes.
+2. Sobre a aprovacao é o contrário, a renda do máximo 3 salarios minimos (detalhes de escrita/interpretacao)
+3. Sobre a variável juros, vc pode declara antes da estrutura IF e entao atribuir dentro
+4. Incompleta, Mas vc tá começando a compreender.
+
+CONSORCIO:
+1. Algumas funcoes com dados nao utilizados
+2. Incompleta
+

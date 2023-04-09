@@ -1,0 +1,14 @@
+FIES:
+1. cabecalho () --> cabecalho()
+2. Number ( question ( " Qual a duracao do curso? : ")) --> Number(question("Qual a duracao do curso? : "))
+3. v_curso_ano (mensalidade ) --> v_curso_ano(mensalidade)
+4. j_c_aa ---> ????, v_tt_juros --> v_tt_juros
+5. Nomes são o Top 1 de organizacao em um código. Capriche nesse item. Nao abreviar ou usar siglas
+6. function v_curso_ano (mensalidade ) { --> function v_curso_ano(mensalidade){
+7. Veja o padrao a de identacao do códigos feitos em aula. 
+8. No geral tá organizado bem em funcoes mas tive dificuldade em enteder pelo nomes ruins
+
+CONSORCIO:
+1. Calcular parcela incluso a taxa de administração
+2. Tá organizado porém confuso para entender o papel das funcoes.
+3. Ler mais e treinar interpretacao e para deixar o código claro

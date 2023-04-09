@@ -1,0 +1,4 @@
+1. Nao reatribuir valores a parametros
+2. botar duas linhas vazias entre as funcoes
+3. Botar a solucao primeiro e entao escrevero código para evitar código confuso.
+4. Distribuir mais as responsabilidade entre as funcoes.

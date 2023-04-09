@@ -1,0 +1,6 @@
+1. Não tem a função main()
+2. Não organizou em funções especializadas
+3. falta organizar as responsabilidade
+4. muito código repetido
+5. funcionalidade nao realizadas.
+6. Questão consorcio nao iniciada basicamente só recebeu os dados

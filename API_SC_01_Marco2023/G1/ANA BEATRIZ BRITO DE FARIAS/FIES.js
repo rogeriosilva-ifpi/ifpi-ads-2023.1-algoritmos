@@ -1,4 +1,4 @@
-import {question} from 'readline-sync'
+import { question } from 'readline-sync'
 
 function Fies(){
     const duração_curso = Number(question('Digite a duração do curso:'))

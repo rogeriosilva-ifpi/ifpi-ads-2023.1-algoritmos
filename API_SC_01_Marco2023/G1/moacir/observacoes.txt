@@ -1,0 +1,5 @@
+CONSORCIO:
+1. Deixar só a main falar com o usuário
+2. Faltam algumas funcionalidades
+
+TUDO MUITO ORGANIZADO.
