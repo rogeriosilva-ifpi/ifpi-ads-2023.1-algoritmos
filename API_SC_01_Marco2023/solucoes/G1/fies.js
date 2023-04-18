@@ -26,10 +26,8 @@ function main(){
     const inicio_pagamento = calcular_inicio_pagamento(ano_inicio, semestre_inicio, duracao_meses)
     const final_pagamento = calcular_final_pagamento(ano_inicio, semestre_inicio, duracao_meses)
 
-    
-
     // Saída
-    console.log(`APTO?: ${apto}`)
+    console.log(`APTO?: ${apto ? 'SIM' : 'NÃO'}`)
     console.log(`Valor a ser Financiado R$: ${valor_financiado.toFixed(2)}`)
     console.log(`Juros do Financiamento R$: ${juros_totais.toFixed(2)}`)
     console.log(`Total a Pagar R$: ${total_a_pagar.toFixed(2)}`)
@@ -44,11 +42,7 @@ function main(){
 // FUNCOES DE NEGOCIO
 function verificar_aptidao(renda_familiar, qtd_membros_familia, salario_minimo){
     const renda_por_pessoa = renda_familiar / qtd_membros_familia
-    if (renda_por_pessoa <= (3 * salario_minimo)){
-        return 'SIM'
-    }else{
-        return 'NAO'
-    }
+    return renda_por_pessoa <= (3 * salario_minimo)
 }
 
 function calcular_valor_curso(duracao, valor_mensalidade){
