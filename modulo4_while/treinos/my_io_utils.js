@@ -24,13 +24,13 @@ export function obter_numero_positivo(label = 'Digite um número positivo: '){
 }
 
 
-function obter_texto(label = 'Digite um texto: '){
+export function obter_texto(label = 'Digite um texto: '){
     const texto = question(label)
 
     return texto
 }
 
-export function mostrar_texto(texto){
+export function mostrar_texto(texto = 'Hello'){
     console.log(texto)
 }
 
@@ -53,4 +53,8 @@ export function maximo_entre_tres_diferentes(valor1, valor2, valor3){
     }else if (valor2 === valor3 && valor2 > valor1){
         return valor2
     }
+}
+
+export function mostrar_texto_inline(texto){
+    process.stdout.write(texto)
 }
