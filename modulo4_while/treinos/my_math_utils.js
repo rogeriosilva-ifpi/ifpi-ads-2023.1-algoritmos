@@ -56,3 +56,7 @@ function contar_divisores(numero){
 
     return contador
 }
+
+export function calcular_porcentagem(valor, percentual){
+    return valor * (percentual/100)
+}

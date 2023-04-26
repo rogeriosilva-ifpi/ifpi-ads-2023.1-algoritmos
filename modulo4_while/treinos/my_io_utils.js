@@ -11,6 +11,16 @@ export function obter_numero(label='Digite um numero: '){
     return Number(numero)
 }
 
+export function obter_numero_minimo(label = 'Digite um número: ', minimo = undefined){
+    let numero = obter_numero(label)
+
+    while (minimo != undefined && numero < minimo){
+        mostrar_texto(`Favor digite um número no mínimo (${minimo}) !`)
+        numero = obter_numero(label)
+    }
+
+    return numero
+}
 
 export function obter_numero_positivo(label = 'Digite um número positivo: '){
     let numero = obter_numero(label)
