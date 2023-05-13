@@ -1,0 +1,61 @@
+1. Crie sua biblioteca de funções utils.
+2. Separe em arquivos temáticos
+
+
+** Entrada e Saída: entrada_saida.[js,py] ** 
+mostrar_texto(conteudo)
+mostrar_texto_inline(conteudo)
+mostrar_texto_caixa_alta(contexto)
+mostrar_texto_caixa_baixa(contexto)
+obter_texto(label)
+obter_texto_tam_minimo(label, minimo)
+obter_texto_tam_maximo(label, maximo)
+obter_texto_min_max(label, minimo, maximo)
+obter_opcoes(label, opcoes)
+
+obter_numero(label)
+obter_numero_positivo(label)
+obter_numero_negativo(label)
+obter_numero_minimo(label, minimo)
+obter_numero_maximo(label, minimo)
+obter_numero_faixa(label, minimo, maximo)
+
+** MATEMATICA: matematica.[js, py] **
+divisores(numero)
+mmc(numero1, numero2)
+eh_par(numero)
+eh_impar(numero)
+eh_primo(numero)
+eh_numero_perfeito(numero)
+fatorial(numero)
+raiz(numero, indice)
+raiz_quadrada(numero)
+raiz_cubica(numero)
+
+
+** STRINGS: texto.[py, js]**
+mostrar_caracteres_por_linha(titulo, texto)
+mostrar_palavras_por_linha(titulo, texto)
+
+quebrar(texto: str) -> list[str]
+juntar(textos: list[str], separador: str) -> string
+
+contar_caractere(texto, caractere, ignore_case: bool)
+contem_caractere(texto, caractere, ignore_case: bool)
+contar_caractere(texto, caractere, ignore_case: bool)
+substituir_caractere(texto, caractere, substituto, ignore_case: bool)
+remover_caracter(texto, caractere, ignore_case: bool)
+
+para_caixa_alta(texto) -> str
+para_caixa_baixa(texto) -> str
+
+usa_apenas(texto, caracteres: str, ignore_case: bool) -> bool
+nao_usa(texto, caracteres: str, ignore_case: bool) -> bool
+
+substring(texto, inicio: int, fim: int) -> str
+substring_tam(texto, inicio: int, tamanho: int) -> str
+contem_substring(texto, substring, ignore_case: bool) -> bool
+contar_substring(texto, substring, ignore_case: bool) -> int
+substituir_substring(texto, substring, ignore_case: bool) -> str
+remover_substring(texto, substring, ignore_case: bool) -> str
+remover_substring_por_faixa(texto, index_inicio: int, index_fim: int) -> str
