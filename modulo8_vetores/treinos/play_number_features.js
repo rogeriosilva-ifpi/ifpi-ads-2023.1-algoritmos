@@ -28,12 +28,60 @@ export function localizar_posicoes(numeros) {
 }
 
 export function multiplicar_cada_numero_por_n(numeros) {
-  const vetor = Array(numeros.length)
-  const n = obter_numero_positivo("Multiplicador: ")
+  return mapear(numeros, 'M')
+}
 
-  for (let i in numeros) {
-    vetor[i] = numeros[i] * n
+export function somar_cada_numero_por_n(numeros){
+  return mapear(numeros, 'S')
+}
+
+
+export function mapear_out(vetor, operacao){
+  const vetor_mapeado = Array(vetor.length)
+  const n = obter_numero_positivo("N: ")
+
+  for (let i in vetor) {
+    if (operacao === 'M'){
+      vetor_mapeado[i] = vetor[i] * n
+    }else if (operacao === 'S'){
+      vetor_mapeado[i] = vetor[i] + n
+    }else if (operacao === 'DAOP'){
+      if (vetor[i] % 2 === 0){
+        vetor_mapeado[i] = vetor[i] * 2
+      }else{
+        vetor_mapeado[i] = vetor[i]
+      }
+    }
   }
 
-  return vetor
+}
+
+export function mapear(vetor, funcao){
+  const vetor_mapeado = Array(vetor.length)
+
+  for (let i in vetor) {
+      vetor_mapeado[i] = funcao(vetor[i])
+  }
+
+  return vetor_mapeado
+}
+
+
+export function filtrar(vetor, funcao){
+  const filtrados = []
+
+  for (let item of vetor){
+    if (funcao(item)){
+      filtrados.push(item)
+    }
+  }
+
+  // for (let index in vetor){
+  //   if (funcao(vetor[index])){
+  //     filtrados.push(vetor[index])
+  //   }
+  // }
+
+  return filtrados
+  
 }
