@@ -1,5 +1,5 @@
 import * as readsync from 'readline-sync'
 
-const nome = readsync.question('Nome: ')
+const nome = readsync.keyInYN('Nome: ')
 
 console.log(nome)

@@ -21,6 +21,7 @@ function main() {
       const tamanho = obter_numero_positivo("Tamanho mínimo: ")
       const palavras_filtradas = filtrar_por_tamanho(palavras, tamanho)
       mostrar_palavras(palavras_filtradas)
+      mostrar_texto(`Total Palavras: ${palavras.length}`)
     } else if (opcao == 0) {
       mostrar_texto("Tchau!!")
       break
@@ -54,8 +55,6 @@ function mostrar_palavras(palavras) {
   for (let palavra of palavras) {
     mostrar_texto(palavra)
   }
-
-  mostrar_texto(`Total Palavras: ${palavras.length}`)
 }
 
 function filtrar_por_tamanho(palavras, tamanho) {
