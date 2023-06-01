@@ -13,8 +13,6 @@ function main(){
     Padrões de Entrada (de acordo com o tipo do dado a ser lido)
     %d - Números inteiros.
     %f - Números float/decimal.
-    %c - Ler um caractere.
-    %s - Ler uma strings.
     */
     scanf('%d', 'count')
     const numbers = []
