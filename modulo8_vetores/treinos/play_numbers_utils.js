@@ -16,8 +16,8 @@ export function obter_numero_aleatorio(limite = 100) {
 
 export function bye() {
   const tchaus = [
-    "Tchau coração",
-    "Até mais BB",
+    "Tchau coração!",
+    "Até mais BB!",
     "Fica bem nenem!",
     "Já estou com saudades!"
   ]
