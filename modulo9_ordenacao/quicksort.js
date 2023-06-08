@@ -26,7 +26,7 @@ function ultima_letra(nome){
     return nome[nome.length - 1]
 }
 
-function quicksort(vetor, {chave = x => x, reverse = false} = {}){
+export function quicksort(vetor, {chave = x => x, reverse = false} = {}){
 
     if (vetor.length <= 1)
         return vetor
@@ -72,4 +72,4 @@ function mapear_colecao(colecao, funcao_mapeadora){
     return nova_colecao
 }
 
-main()
+// main()
