@@ -1,0 +1,10 @@
+Linha 0: Escrita em Python
+Linha 1: Escrita em Python
+Linha 2: Escrita em Python
+Linha 3: Escrita em Python
+Linha 4: Escrita em Python
+Linha 5: Escrita em Python
+Linha 6: Escrita em Python
+Linha 7: Escrita em Python
+Linha 8: Escrita em Python
+Linha 9: Escrita em Python
