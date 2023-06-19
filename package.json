@@ -8,6 +8,7 @@
   "type": "module",
   "dependencies": {
     "readline-sync": "^1.4.10",
-    "scanf-printf-obi": "^1.0.0"
+    "scanf-printf-obi": "^1.0.0",
+    "ulidx": "^2.0.0"
   }
 }

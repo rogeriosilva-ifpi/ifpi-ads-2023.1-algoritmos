@@ -1,13 +1,13 @@
 import fs from 'fs'
 
 function main(){
-    const file = fs.createWriteStream('arquivo.txt', 'utf-8')
+    const data = ''
 
     for (let i = 0; i < 10; i++){
-        file.write(`Linha ${i}: Testando\n`)
+        data += `Linha ${i}: Testando\n`
     }
 
-    file.end()
+    fs.writeFileSync('montadoras.txt', data)
 
 }
 

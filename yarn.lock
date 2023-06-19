@@ -2,12 +2,24 @@
 # yarn lockfile v1
 
 
+layerr@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/layerr/-/layerr-2.0.0.tgz"
+  integrity sha512-d17+qA3CAekh29Z67nLQaqCXJSvoo9zKBvZAziYdDwTOeA1XdOoTuLtNOLg+TW5Tse+D9bw8VHsTQo5vU7G/kA==
+
 readline-sync@^1.4.10:
   version "1.4.10"
-  resolved "https://registry.yarnpkg.com/readline-sync/-/readline-sync-1.4.10.tgz#41df7fbb4b6312d673011594145705bf56d8873b"
+  resolved "https://registry.npmjs.org/readline-sync/-/readline-sync-1.4.10.tgz"
   integrity sha512-gNva8/6UAe8QYepIQH/jQ2qn91Qj0B9sYjMBBs3QOB8F2CXcKgLxQaJRP76sWVRQt+QU+8fAkCbCvjjMFu7Ycw==
 
 scanf-printf-obi@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/scanf-printf-obi/-/scanf-printf-obi-1.0.0.tgz#0fdeeb21b451a682bf0cf17d8dea99bc0376d628"
+  resolved "https://registry.npmjs.org/scanf-printf-obi/-/scanf-printf-obi-1.0.0.tgz"
   integrity sha512-XSBZzkGnPqBDF17wAuycT+820pSPSU3GLyTR77O68gkndlAa6drZoNdHPumRvE6FUFuw0H1ws9nK4bytWKBZhw==
+
+ulidx@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/ulidx/-/ulidx-2.0.0.tgz"
+  integrity sha512-cz6HnYL8aQeR1l7qgo4qK88kLhnVQn1qLjALMoa4rtmj6/jw3yS2KUxu3r+d8GSKkeK9ctw+n8VmCygqfDtckA==
+  dependencies:
+    layerr "^2.0.0"
