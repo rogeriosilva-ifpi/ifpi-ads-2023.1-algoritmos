@@ -11,6 +11,8 @@ function main(){
     const LIST_MONTADORA = '2'
     const ATUALIZAR_MONTADORA = '3'
     const REMOVE_MONTADORA = '4'
+    const ADD_MODELO = '5'
+    const LIST_MODELO = '6'
 
     // Dados Globais
     const montadoras = inicializacao('montadoras')
@@ -26,6 +28,8 @@ function main(){
     2 - Listar Montadoras
     3 - Atualizar Montadora
     4 - Remover Montadora
+    5 - Novo Modelo
+    6 - Listar Modelos
     0 - Sair
     \n >>> `
     
@@ -43,6 +47,11 @@ function main(){
             remover_montadora(montadoras)
         }else if (opcao === ATUALIZAR_MONTADORA){
             atualizar_montadora(montadoras)
+        }else if (opcao === ADD_MODELO){
+            const modelo = generate_modelo(montadoras)
+            modelos.push(modelo)
+        }else if (opcao === LIST_MODELO){
+            show_modelos(modelos)
         }
 
         enter_to_continue()
@@ -50,7 +59,7 @@ function main(){
         opcao = input(menu())
     }
     // Gravar dados
-    gravar_dados(montadoras)
+    gravar_dados(montadoras, modelos)
 
     bye()
 }
@@ -78,15 +87,27 @@ function inicializacao(tipo, cad_montadoras){
         return montadoras
     }else if (tipo === 'modelos'){
         const modelos = []
+        const data = fs.readFileSync('modelos.txt', 'utf-8')
 
-        /*
-        const montadora_id = atributos[2]
-        const modelo = {}
-        const montadora = obter_montadora_por_id(montadoras, montadora_id)
-        modelo['montadora'] = montadora
-        montadora['modelos'].push(modelo)
-        */
-    
+        const lines = data.split('\n')
+
+        for (let line of lines){
+            if (!line) continue
+
+            // ID#NOME#MONTADORA_ID
+            const atributos = line.split('#')
+
+            const modelo = {
+                'id': atributos[0],
+                'nome': atributos[1],
+                'montadora_id': atributos[2],
+                'montadora': obter_montadora_por_id(cad_montadoras, atributos[2])
+            }
+
+            modelos.push(modelo)
+        }
+
+        return modelos
     }
 
     
@@ -129,6 +150,16 @@ function show_montadoras(montadoras){
     for (let m of montadoras){
         const line = `${m['id']} - ${m['nome']} - ${m['pais']} - ${m['ano']}`
         print(line)
+    }
+    print('------------------------------------')
+}
+
+function show_modelos(modelos){
+    print('***** MODELOS CADASTRADOS *******')
+    print('------------------------------------')
+    for (let modelo of modelos){
+        const item = `${modelo['id']} - ${modelo['nome']} - ${modelo['montadora']['nome']}`
+        print(item)
     }
     print('------------------------------------')
 }
@@ -178,13 +209,35 @@ function atualizar_montadora(montadoras){
     print('Montadora atualizada com sucesso!')
 }
 
-function gravar_dados(montadoras){
+function gravar_dados(montadoras, modelos){
     let data = ''
     for (let m of montadoras){
         data += `${m['id']}#${m['nome']}#${m['pais']}#${m['ano']}\n`
     }
 
     fs.writeFileSync('montadoras.txt', data)
+
+    data = ''
+    for (let modelo of modelos){
+        data += `${modelo['id']}#${modelo['nome']}#${modelo['montadora']['id']}\n`
+    }
+    fs.writeFileSync('modelos.txt', data)
 }
+
+// #######  MODELOS  ########
+function generate_modelo(montadoras){
+    const index = obter_index_montadora(montadoras)
+    const montadora_selecionada = montadoras[index]
+
+    const nome = input('Nome: ')
+
+    const modelo = {}
+    modelo['id'] = ulid()
+    modelo['nome'] = nome
+    modelo['montadora_id'] = montadora_selecionada['id']
+    modelo['montadora'] = montadora_selecionada
+
+    return modelo
+ }
 
 main()
