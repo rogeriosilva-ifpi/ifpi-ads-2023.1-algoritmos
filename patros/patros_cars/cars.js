@@ -100,7 +100,7 @@ function inicializacao(tipo, cad_montadoras){
             const modelo = {
                 'id': atributos[0],
                 'nome': atributos[1],
-                'montadora_id': atributos[2],
+                // 'montadora_id': atributos[2],
                 'montadora': obter_montadora_por_id(cad_montadoras, atributos[2])
             }
 
@@ -234,7 +234,7 @@ function generate_modelo(montadoras){
     const modelo = {}
     modelo['id'] = ulid()
     modelo['nome'] = nome
-    modelo['montadora_id'] = montadora_selecionada['id']
+    // modelo['montadora_id'] = montadora_selecionada['id']
     modelo['montadora'] = montadora_selecionada
 
     return modelo
