@@ -1,0 +1,3 @@
+def main():
+    valor
+main()

@@ -1,0 +1,17 @@
+{
+  "name": "prova",
+  "version": "1.0.0",
+  "description": "",
+  "main": "05saudacao.js",
+  "type": "module",
+  "scripts": {
+    "test": "05saudacao.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0",
+    "readline-sync": "^1.4.10"
+  }
+}
